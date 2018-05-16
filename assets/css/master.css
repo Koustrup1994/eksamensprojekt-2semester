@@ -76,8 +76,13 @@ main {
 }
 
 h1 {
-  font-family: 'Gorgia', serif;
+  font-family: 'georgia', serif;
   font-size: 3em;
+}
+
+h2 {
+  font-family: 'georgia', serif;
+  font-size: 2.2em;
 }
 
 h3 {
@@ -87,4 +92,21 @@ h3 {
 .fp-info {
   padding-top: 30px;
   font-style: italic;
+}
+
+.content-box {
+  width: 635px;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.text {
+  font-size: 1.5em;
+}
+
+.content-img {
+  width: 635px;
+  height: 470px;
+  margin-left: 50px;
+  background-color: cyan;
 }
