@@ -13,7 +13,7 @@ body {
 header {
   z-index: 1000;
   position: fixed;
-  background-color: black;
+  background-color: #855723;
   height: 80px;
   width: 100%;
 }
