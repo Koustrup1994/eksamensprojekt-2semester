@@ -58,7 +58,6 @@ main {
 .center {
   flex: 6 1 0;
   padding-top: 120px;
-  text-align: center;
 }
 
 .right {
@@ -78,13 +77,16 @@ main {
 h1 {
   font-family: 'Gorgia', serif;
   font-size: 3em;
+  text-align: center;
 }
 
 h3 {
   padding-top: 10px;
+  text-align: center;
 }
 
 .fp-info {
   padding-top: 30px;
   font-style: italic;
+  text-align: center;
 }
