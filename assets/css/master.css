@@ -95,13 +95,14 @@ h3 {
 }
 
 .content-box {
-  width: 635px;
   text-align: left;
   margin-top: 50px;
+  display: flex;
 }
 
-.text {
+.p-text {
   font-size: 1.5em;
+  width: 635px;
 }
 
 .content-img {
