@@ -13,7 +13,7 @@ body {
 header {
   z-index: 1000;
   position: fixed;
-  background-color: #855723;
+  background-color: #3f4f24;
   height: 80px;
   width: 100%;
 }
@@ -33,11 +33,66 @@ nav > a {
 
 main {
   min-height: 1000px;
+  padding-top: 120px;
 }
 
 .flex {
   display: flex;
 }
+
+.row {
+  flex-direction: row;
+}
+
+.align-center {
+    align-self: center;
+}
+
+/** Menu specific **/
+
+.head {
+  justify-content: space-between;
+}
+
+.head > a {
+  text-decoration: none;
+  color: white;
+  line-height: 20px;
+}
+
+.menu {
+  justify-content: center;
+}
+
+.menu-icon {
+  display: block;
+  background-image: url("../images/baseline-menu-24px.svg");
+  width: 80px;
+  height: 80px;
+}
+
+.menu-close-icon {
+  display: block;
+  background-image: url("../images/baseline-close-24px.svg");
+  width: 80px;
+  height: 80px;
+}
+
+.menu-icon > img {
+
+  height: 80px;
+  width: 80px;
+}
+
+.logo > img {
+  height: 80px;
+}
+
+.logo, .menu-icon {
+  height: 80px;
+}
+
+/** Other **/
 
 .border-5 {
   border-style: solid;
@@ -53,7 +108,6 @@ main {
 
 .center {
   flex: 6 1 0;
-  padding-top: 120px;
   text-align: center;
 }
 
@@ -65,10 +119,6 @@ main {
   flex: 1 6 0;
 }
 
-.menu {
-  justify-content: center;
-}
-
 .fw-img > img{
   max-width: 100%;
   height: auto;
@@ -76,7 +126,7 @@ main {
 }
 
 h1 {
-  font-family: 'Gorgia', serif;
+  font-family: 'Georgia', serif;
   font-size: 3em;
 }
 
@@ -87,4 +137,26 @@ h3 {
 .fp-info {
   padding-top: 30px;
   font-style: italic;
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    flex-direction: column;
+    height: auto;
+    background-color: #3f4f24;
+    order: 2;
+    flex: 1 6 100%
+  }
+
+  .menu > a {
+    display: none;
+  }
+
+  .head {
+    flex-wrap: wrap;
+  }
+
+  .menu-icon {
+    display: block;
+  }
 }
