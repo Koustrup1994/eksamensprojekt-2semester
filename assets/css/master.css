@@ -1,6 +1,8 @@
 @font-face {
+  /* Raleway font is for paragrafs and h2-h6 */
   font-family: raleway;
   src: url(../Raleway/Raleway-Regular.ttf);
+  /* Gorgia font is for headlines and sub-headlines in articels or sections */
 }
 
 * {
@@ -10,7 +12,7 @@
 
 body {
   min-height: 100vh;
-  font-family: 'Lato', sans-serif;
+  font-family: raleway;
   color: #444;
   background: #EEEEEE;
 }
@@ -82,5 +84,10 @@ main {
 }
 
 h1 {
-  font-family: raleway;
+  font-family: Gorgia;
+  font-size: 3em;
+}
+
+h3 {
+  padding-top: 10px;
 }
