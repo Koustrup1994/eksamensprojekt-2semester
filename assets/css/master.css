@@ -52,19 +52,17 @@ main {
 }
 
 .left {
-  background-color: blue;
 }
 
 .center {
-  flex-grow: 1;
+  flex: 6 1 0;
 }
 
 .right {
-  background-color: magenta;
 }
 
 .sidebar {
-  flex-basis: 300px;
+  flex: 1 6 0;
 }
 
 .content {
