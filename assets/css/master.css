@@ -34,8 +34,13 @@ nav > ul > li > a {
   color: white;
 }
 
+main {
+  min-height: 700px;
+}
+
 .flex {
   display: flex;
+
 }
 
 .border-5 {
@@ -51,9 +56,14 @@ nav > ul > li > a {
 }
 
 .center {
+  flex-grow: 1;
   background-color: red;
 }
 
 .right {
   background-color: magenta;
+}
+
+.sidebar {
+  flex-basis: 300px;
 }
