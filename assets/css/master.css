@@ -52,16 +52,17 @@ main {
 }
 
 .left {
-  background-color: blue;
+
 }
 
 .center {
   flex-grow: 1;
-  background-color: red;
+  padding-top: 120px;
+  text-align: center;
 }
 
 .right {
-  background-color: magenta;
+
 }
 
 .sidebar {
