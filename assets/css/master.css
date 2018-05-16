@@ -13,7 +13,7 @@ body {
 header {
   z-index: 1000;
   position: fixed;
-  background-color: black;
+  background-color: #855723;
   height: 80px;
   width: 100%;
 }
@@ -52,20 +52,39 @@ main {
 }
 
 .left {
+
 }
 
 .center {
   flex: 6 1 0;
+  padding-top: 120px;
+  text-align: center;
 }
 
 .right {
+
 }
 
 .sidebar {
   flex: 1 6 0;
 }
 
-.content {
-  font-size: 1.5em;
-  width: 635px;
+.fw-img >img{
+  max-width: 100%;
+  height: auto;
+  padding-top: 30px;
+}
+
+h1 {
+  font-family: 'Gorgia', serif;
+  font-size: 3em;
+}
+
+h3 {
+  padding-top: 10px;
+}
+
+.fp-info {
+  padding-top: 30px;
+  font-style: italic;
 }
