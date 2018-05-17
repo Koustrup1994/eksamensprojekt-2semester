@@ -90,3 +90,57 @@ h3 {
   font-style: italic;
   text-align: center;
 }
+
+/*rooms*/
+
+.rooms-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.rooms-icons > figure > img {
+  margin: 50px 50px 10px 50px;
+  height: 60px;
+  width: 60px;
+  opacity: 0.70;
+}
+
+.rooms-icons > figure > figcaption {
+  text-align: center;
+}
+
+.rooms {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.rooms-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.rooms-italic {
+  font-style: italic;
+}
+
+.room-box {
+  height: 390px;
+  width: 407px;
+  background-color: white;
+  margin: 0 10px 50px 10px;
+}
+
+.room-box > p
+{
+  margin: 5px auto 5px 15px;
+}
+
+.room-box > img {
+  display: block;
+  width: 92%;
+  margin: 15px auto 5px auto;
+
+}
