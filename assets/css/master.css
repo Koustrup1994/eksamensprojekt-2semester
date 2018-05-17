@@ -168,6 +168,12 @@ h3 {
 }
 
 @media (max-width: 1200px) {
+  .menu > a {
+    
+  }
+}
+
+@media (max-width: 1000px) {
   .menu {
     flex-direction: column;
     height: auto;
@@ -186,5 +192,9 @@ h3 {
 
   .menu-icon {
     visibility: visible;
+  }
+
+  .sidebar {
+    flex: 0.1 6 0;
   }
 }

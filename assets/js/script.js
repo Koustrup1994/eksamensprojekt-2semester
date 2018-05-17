@@ -12,14 +12,15 @@ function handleMenu() {
       menuButton.classList.remove("menu-close-icon");
       for (menuItem of menuItems) {
         menuItem.style.display = "none";
+
       }
     }
 }
 
 window.onload = function() {
-  let width = document.body.clientWidth;
+  let width = window.innerWidth;
 
-  if (width > 1200) {
+  if (width > 1000) {
       let menuItems = document.querySelectorAll(".menu > a");
       for (menuItem of menuItems) {
         menuItem.style.display = "block";
@@ -28,15 +29,15 @@ window.onload = function() {
 }
 
 window.addEventListener("resize", function() {
-    let width = document.body.clientWidth;
+    let width = window.innerWidth;
 
-    if (width > 1200) {
+    if (width > 1000) {
       let menuItems = document.querySelectorAll(".menu > a");
       for (menuItem of menuItems) {
         menuItem.style.display = "block";
       }
     }
-    else if (width < 1200) {
+    else {
       let menuItems = document.querySelectorAll(".menu > a");
       let menuButton = document.querySelector("#hamburger-menu");
       for (menuItem of menuItems) {
