@@ -41,6 +41,9 @@ main {
 
 .wrap {
   flex-wrap: wrap;
+}
+
+.justify {
   justify-content: space-between;
 }
 
@@ -108,13 +111,24 @@ h3 {
 
 
 .content-box {
-  width: 690px;
+  width: 700px;
   height: 400px;
+  margin-bottom: 100px;
+}
+
+.content-text {
+  width: 700px;
+  height: 400px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.content-container {
   margin-top: 100px;
 }
 
 .img {
-  width: 690px;
+  width: 700px;
 }
 
 .p-text {
