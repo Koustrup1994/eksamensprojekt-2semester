@@ -40,6 +40,14 @@ main {
   display: flex;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
+.justify {
+  justify-content: space-between;
+}
+
 .row {
   flex-direction: row;
 }
@@ -131,6 +139,10 @@ h1 {
   text-align: center;
 }
 
+.subpage-h1 {
+  margin-top: 50px;
+}
+
 h2 {
   font-family: 'georgia', serif;
   font-size: 2em;
@@ -148,28 +160,38 @@ h3 {
   text-align: center;
 }
 
+
 .content-box {
-  text-align: left;
-  margin-top: 50px;
-  display: flex;
-  line-height: 1.4;
+  width: 700px;
+  height: 400px;
+  margin-bottom: 100px;
+}
+
+.content-text {
+  width: 700px;
+  height: 400px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.content-container {
+  margin-top: 100px;
+}
+
+.img {
+  width: 700px;
 }
 
 .p-text {
+  text-align: left;
   font-size: 1.2em;
-  width: 635px;
-}
-
-.content-img {
-  width: 635px;
-  height: 400px;
-  margin-left: 50px;
-  background-color: cyan;
+  line-height: 1.4;
+  width: auto;
 }
 
 @media (max-width: 1200px) {
   .menu > a {
-    
+
   }
 }
 
