@@ -39,6 +39,11 @@ main {
   display: flex;
 }
 
+.wrap {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .border-5 {
   border-style: solid;
   border-width: 5px;
@@ -97,21 +102,21 @@ h3 {
   text-align: center;
 }
 
+
 .content-box {
-  text-align: left;
-  margin-top: 50px;
-  display: flex;
-  line-height: 1.4;
+  margin-top:;
+  width: 675px;
+  height: 400px;
+  margin-top: 100px;
+}
+
+.img {
+  width: 675px;
 }
 
 .p-text {
+  text-align: left;
   font-size: 1.2em;
-  width: 635px;
-}
-
-.content-img {
-  width: 635px;
-  height: 400px;
-  margin-left: 50px;
-  background-color: cyan;
+  line-height: 1.4;
+  width: auto;
 }
