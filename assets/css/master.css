@@ -131,16 +131,29 @@ h3 {
   width: 407px;
   background-color: white;
   margin: 0 10px 50px 10px;
+  text-align: center;
 }
 
-.room-box > p
-{
-  margin: 5px auto 5px 15px;
+.room-box > p {
+  margin: 15px auto 10px 15px;
+  text-align: left;
 }
 
 .room-box > img {
   display: block;
   width: 92%;
   margin: 15px auto 5px auto;
+}
 
+.room-box > button {
+  padding: 5px 10px;
+  background-color: #658d3c;
+  color: white;
+  border: none;
+  font-size: 16px;
+  transition-duration: 0.2s;
+}
+
+.room-box > button:hover {
+  box-shadow: 5px 5px 18px 0 rgba(101,141,60,0.6);
 }
