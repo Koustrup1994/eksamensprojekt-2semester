@@ -147,6 +147,7 @@ h2 {
   font-family: 'georgia', serif;
   font-size: 2em;
   font-weight: normal;
+  padding-top: 30px;
 }
 
 h3 {
@@ -169,7 +170,7 @@ h3 {
   background-color: #FFF;
   width: 100%;
   height: 400px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .content-box {
