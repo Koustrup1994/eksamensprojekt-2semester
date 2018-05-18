@@ -226,3 +226,13 @@ h3 {
     flex: 0.1 6 0;
   }
 }
+
+.logo {
+  height: 500px;
+  width: 500px;
+  padding-bottom: 30px;
+}
+
+.front-page-bg {
+  background-image: url(../images/school.png);
+}
