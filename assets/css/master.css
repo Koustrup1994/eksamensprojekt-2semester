@@ -160,22 +160,21 @@ h3 {
   text-align: center;
 }
 
+.content-container {
+  margin-top: 100px;
+  width: 100%;
+}
 
-.content-box {
-  width: 700px;
+.content-outerbox {
+  background-color: #FFF;
+  width: 100%;
   height: 400px;
   margin-bottom: 100px;
 }
 
-.content-text {
+.content-box {
   width: 700px;
   height: 400px;
-  box-sizing: border-box;
-  padding: 20px;
-}
-
-.content-container {
-  margin-top: 100px;
 }
 
 .img {
@@ -186,7 +185,8 @@ h3 {
   text-align: left;
   font-size: 1.2em;
   line-height: 1.4;
-  width: auto;
+  width: 700px;
+  max-height: 400px;
 }
 
 @media (max-width: 1200px) {
