@@ -100,8 +100,12 @@ main {
   width: 80px;
 }
 
+.logo {
+  margin-top: 5px;
+}
+
 .logo > img {
-  height: 80px;
+  height: 70px;
 }
 
 .logo, .menu-icon {
