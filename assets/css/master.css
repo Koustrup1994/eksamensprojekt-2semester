@@ -33,7 +33,7 @@ nav > a {
 
 main {
   min-height: 1000px;
-  padding-top: 120px;
+  padding-top: 80px;
 }
 
 .flex {
@@ -92,7 +92,6 @@ main {
 }
 
 .menu-icon > img {
-
   height: 80px;
   width: 80px;
 }
@@ -236,12 +235,13 @@ h3 {
   }
 }
 
-.logo {
+.logo-large {
   height: 500px;
   width: 500px;
-  padding-bottom: 30px;
 }
 
 .front-page-bg {
   background-image: url(../images/school.png);
+  width: 100%;
+  height: 500px;
 }
