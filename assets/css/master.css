@@ -248,19 +248,15 @@ h3 {
 
 /*rooms*/
 
-.rooms-icons {
-  display: flex;
-  justify-content: center;
-}
 
-.rooms-icons > figure > img {
+.room-icons > figure > img {
   margin: 50px 50px 10px 50px;
   height: 60px;
   width: 60px;
   opacity: 0.70;
 }
 
-.rooms-icons > figure > figcaption {
+.room-icons > figure > figcaption {
   text-align: center;
 }
 
