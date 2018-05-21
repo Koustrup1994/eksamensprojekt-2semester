@@ -168,9 +168,11 @@ h3 {
 
 .fp-info {
   padding-top: 30px;
+  color: #444;
   font-style: italic;
   text-align: center;
   font-size: 1.2em;
+  margin-top: 23.8%;
 }
 
 .content-container {
@@ -219,7 +221,7 @@ h3 {
     height: auto;
     background-color: #3f4f24;
     order: 2;
-    flex: 1 6 100%
+    flex: 1 6 100%;
   }
 
   .menu > a {
@@ -249,8 +251,4 @@ h3 {
   background-color: #444;
   width: 100%;
   height: 600px;
-}
-
-.bg-image {
-  width: 100%;
 }
