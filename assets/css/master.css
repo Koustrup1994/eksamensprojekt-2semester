@@ -300,15 +300,18 @@ h3 {
   margin: 15px auto 5px auto;
 }
 
-.room-box > button {
-  padding: 5px 10px;
+.book-btn > a > button {
+  padding: 15px 30px;
+  margin: -20px 20px 20px 20px;
   background-color: #658d3c;
   color: white;
   border: none;
-  font-size: 16px;
+  border-radius: 5px;
+  font-size: 25px;
   transition-duration: 0.2s;
+  cursor: pointer;
 }
 
-.room-box > button:hover {
+.book-btn > a > button:hover {
   box-shadow: 5px 5px 18px 0 rgba(101,141,60,0.6);
 }
