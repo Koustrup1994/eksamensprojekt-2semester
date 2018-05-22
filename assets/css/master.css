@@ -340,7 +340,7 @@ p {
   margin: 15px auto 5px auto;
 }
 
-.book-btn > a > button {
+.center > a > .book-btn {
   padding: 15px 30px;
   margin: -20px 20px 20px 20px;
   background-color: #658d3c;
@@ -352,7 +352,7 @@ p {
   cursor: pointer;
 }
 
-.book-btn > a > button:hover {
+.center > a > .book-btn:hover {
   box-shadow: 5px 5px 18px 0 rgba(101,141,60,0.6);
 }
 
@@ -511,5 +511,10 @@ label {
 
   .room {
 
+  }
+
+  figure > img {
+    max-height: 30px;
+    max-width: 30px;
   }
 }
