@@ -307,7 +307,8 @@ p {
 }
 
 .room-icons > figure > figcaption {
-  text-align: center;
+  max-width: 130px;
+  margin: auto;
 }
 
 .rooms {
