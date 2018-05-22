@@ -258,7 +258,9 @@ h3 {
 }
 
 /*rooms*/
-
+.room-icons {
+  justify-content: center;
+}
 
 .room-icons > figure > img {
   margin: 50px 50px 10px 50px;
@@ -272,14 +274,12 @@ h3 {
 }
 
 .rooms {
-  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 40px;
 }
 
 .rooms-info {
-  display: flex;
   justify-content: center;
   margin-top: 60px;
 }
