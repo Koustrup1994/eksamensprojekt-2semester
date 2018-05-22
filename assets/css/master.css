@@ -191,7 +191,6 @@ h1 {
 }
 
 .center > h1 {
-  color: #EEE;
   margin-top: 170px;
 }
 
@@ -292,6 +291,10 @@ h3 {
 p {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.white-text {
+  color: #EEE;
 }
 
 /* Buttons */
