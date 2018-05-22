@@ -259,7 +259,8 @@ h3 {
 }
 
 .gallery-container {
-  width: 1427px;
+  max-width: 1427px;
+  max-height: 700px;
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(63,79,35,0.1);
