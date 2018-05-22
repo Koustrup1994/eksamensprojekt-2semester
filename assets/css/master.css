@@ -275,7 +275,6 @@ h3 {
 
 .rooms {
   justify-content: center;
-  flex-wrap: wrap;
   margin-top: 40px;
 }
 
@@ -289,11 +288,9 @@ h3 {
 }
 
 .room-box {
-  height: 350px;
-  width: 407px;
+  
   background-color: white;
   margin: 0 10px 50px 10px;
-  text-align: center;
 }
 
 .room-box > p {
