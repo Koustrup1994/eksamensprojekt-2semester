@@ -1,4 +1,4 @@
-var picPaths = ['assets/images/swimming.jpg', 'assets/images/westcoast.jpg', 'assets/images/forest.jpg'];
+var picPaths = ['assets/images/img1.jpg', 'assets/images/img1.jpg'];
 
 var curPic = -1;
 

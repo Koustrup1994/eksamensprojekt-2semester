@@ -132,7 +132,6 @@ main {
 }
 
 .right {
-
 }
 
 .sidebar {
@@ -149,6 +148,12 @@ h1 {
   font-family: 'georgia', serif;
   font-size: 3em;
   text-align: center;
+  margin-top: 50px;
+}
+
+.center > h1 {
+  color: #EEE;
+  margin-top: 170px;
 }
 
 .subpage-h1 {
@@ -171,10 +176,13 @@ h3 {
 
 .fp-info {
   padding-top: 30px;
-  color: #444;
+  color: #EEE;
   font-style: italic;
   text-align: center;
   font-size: 1.2em;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .content-container {
@@ -251,13 +259,13 @@ h3 {
 }
 
 .gallery-container {
-  width: 700px;
-  height: 400px;
-  margin-top: 50px;
+  width: 1427px;
   margin-left: auto;
   margin-right: auto;
-  padding: 25px;
   background-color: rgba(63,79,35,0.1);
+  position: absolute;
+  top: 180px;
+  z-index: -1000;
 }
 
 /*rooms*/
