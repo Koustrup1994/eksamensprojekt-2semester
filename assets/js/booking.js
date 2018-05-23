@@ -94,7 +94,6 @@ function daySelect(event) {
       If the chosen date is either the last or first date of selectedDates,
       the date is removed from the array*/
       if (!inMiddle(selectedDates, date)) {
-        selectedRoom = [];
         event.target.style.background = "";
         selectedDates.splice(selectedDates.indexOf(date), 1);
       }
@@ -102,7 +101,6 @@ function daySelect(event) {
   }
   //If chosen date is neighbor to either the first or last date in selectedDates the chosen date can be added to the array. Important for securing that selectedDates does not contain any holes
   else if (isNeighbor(selectedDates, date)) {
-    selectedRoom = [];
     event.target.style.background = "green";
     selectedDates.unshift(date);
     selectedDates.sort(function(a, b) {
@@ -124,16 +122,7 @@ function clearDates() {
 
 // Selects a room for reservation
 function pickRoom(event) {
-  let string = "#r" + event.target.dataset.roomid;
-  let box = document.querySelector(string);
-  if (box.style.borderColor != "") {
-    box.style.borderColor = "";
-    selectedRoom.splice(selectedRoom.indexOf(String(event.target.dataset.roomid)), 1);
-  }
-  else {
-    box.style.borderColor = "#658d3c";
-    selectedRoom.unshift(event.target.dataset.roomid);
-  }
+  selectedRoom = event.target.dataset.roomid;
 }
 
 function submitReservation() {
@@ -146,7 +135,7 @@ function submitReservation() {
   document.querySelector("#fname").value = "";
   document.querySelector("#lname").value = "";
   document.querySelector("#email").value = "";
-  selectedRoom = [];
+  selectedRoom = "";
   selectedDates = [];
   clearDates();
 }
@@ -213,18 +202,15 @@ function getReservationsFromDates() {
   let reservations = getLocalReservations();
 
   if (selectedDates.length == 0) {
-    returnValue = [];
+    returnValue = reservations;
   }
   else {
-    for (reservation of reservations) {
-      for (date of reservation.dates) {
-        for (roomId of reservation.roomId) {
-          for (selectedDate of selectedDates) {
-            if (!returnValue.includes(roomId)) {
-              if (selectedDate == date) {
-                returnValue.unshift(roomId);
-                console.log(selectedDate);
-              }
+    for (item of reservations) {
+      for (date of item.dates) {
+        for (var i = 0; i < selectedDates.length; i++) {
+          if (!returnValue.includes(item.roomId)) {
+            if (item.dates.includes(selectedDates[i])) {
+              returnValue.unshift(item.roomId)
             }
           }
         }
@@ -240,11 +226,9 @@ function getRoomsToShow(reservatedRooms) {
   let rooms = getLocalRooms();
 
   for (room of rooms) {
-
-      if (!reservatedRooms.includes(room.roomId)) {
-        nonBookedRooms.unshift(room);
-      }
-
+    if (!reservatedRooms.includes(room.roomId)) {
+      nonBookedRooms.unshift(room);
+    }
   }
 
   return nonBookedRooms;
@@ -260,7 +244,6 @@ function buildList() {
   for (room of roomsToShow) {
     let roomDiv = document.createElement("div");
     roomDiv.classList.add("room");
-    roomDiv.id = "r" + room.roomId;
 
     let roomImg = document.createElement("img");
     roomImg.classList.add("room-img")
@@ -290,7 +273,7 @@ function buildList() {
 
     a.appendChild(btn);
 
-    roomDiv.appendChild(btn);
+    roomDiv.appendChild(a);
 
     roomsSelection.appendChild(roomDiv);
   }
@@ -298,7 +281,7 @@ function buildList() {
 
 var selectedDates = [];
 var days = [];
-var selectedRoom = [];
+var selectedRoom;
 
 window.onload = function() {
   let tableData = document.querySelectorAll("td");
