@@ -310,32 +310,28 @@ p {
 }
 
 /*rooms*/
-
-.rooms-icons {
-  display: flex;
+.room-icons {
   justify-content: center;
 }
 
-.rooms-icons > figure > img {
+.room-icons > figure > img {
   margin: 50px 50px 10px 50px;
   height: 60px;
   width: 60px;
   opacity: 0.70;
 }
 
-.rooms-icons > figure > figcaption {
-  text-align: center;
+.room-icons > figure > figcaption {
+  max-width: 130px;
+  margin: auto;
 }
 
 .rooms {
-  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   margin-top: 40px;
 }
 
 .rooms-info {
-  display: flex;
   justify-content: center;
   margin-top: 60px;
 }
@@ -347,7 +343,6 @@ p {
 .room-box {
   background-color: white;
   margin: 0 10px 50px 10px;
-  text-align: center;
 }
 
 .room-box > p {
@@ -357,20 +352,23 @@ p {
 
 .room-box > img {
   display: block;
-  width: 92%;
+  max-width: 92%;
   margin: 15px auto 5px auto;
 }
 
-.room-box > button {
-  padding: 5px 10px;
+.center > a > .book-btn {
+  padding: 15px 30px;
+  margin: 0 20px 20px 20px;
   background-color: #658d3c;
-  color: white;
+  color: #ffffff;
   border: none;
-  font-size: 16px;
+  border-radius: 5px;
+  font-size: 25px;
   transition-duration: 0.2s;
+  cursor: pointer;
 }
 
-.room-box > button:hover {
+.center > a > .book-btn:hover {
   box-shadow: 5px 5px 18px 0 rgba(101,141,60,0.6);
 }
 
@@ -529,5 +527,10 @@ label {
 
   .room {
 
+  }
+
+  figure > img {
+    max-height: 30px;
+    max-width: 30px;
   }
 }
