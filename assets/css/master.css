@@ -329,6 +329,7 @@ p {
     font-size: 1.25em;
     transition-duration: 0.2s;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 /*rooms*/
@@ -379,7 +380,6 @@ p {
 }
 
 .center > a > .book-btn {
-  margin: 0 20px 20px 20px;
   font-size: 2em;
 }
 
