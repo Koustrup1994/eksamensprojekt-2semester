@@ -360,18 +360,11 @@ p {
 }
 
 .center > a > .book-btn {
-  padding: 15px 30px;
   margin: 0 20px 20px 20px;
-  background-color: #658d3c;
-  color: #ffffff;
-  border: none;
-  border-radius: 5px;
-  font-size: 25px;
-  transition-duration: 0.2s;
-  cursor: pointer;
+  font-size: 2em;
 }
 
-.center > a > .book-btn:hover {
+.book-btn:hover {
   box-shadow: 5px 5px 18px 0 rgba(101,141,60,0.6);
 }
 
