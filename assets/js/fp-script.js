@@ -1,26 +1,26 @@
-var picPaths = ['assets/images/img1.jpg', 'assets/images/img2.jpg'];
+var imgPaths = ['assets/images/img1.jpg', 'assets/images/img2.jpg'];
 
-var curPic = -1;
+var curImg = -1;
 
 var imgO = new Array();
 
-for(i=0; i < picPaths.length; i++) {
+for(i=0; i < imgPaths.length; i++) {
     imgO[i] = new Image();
-    imgO[i].src = picPaths[i];
+    imgO[i].src = imgPaths[i];
 }
 
 function swapImage() {
-    if (++curPic > picPaths.length-1) {
-      curPic = 0;
+    if (++curImg > imgPaths.length-1) {
+      curImg = 0;
     }
     else {
-      curPic = curPic
+      curImg = curImg
     }
-    imgCont.src = imgO[curPic].src;
+    imgCont.src = imgO[curImg].src;
     setTimeout(swapImage,5000);
 }
 
 window.onload=function() {
-    imgCont = document.querySelector('#imgBanner');
+    imgCont = document.querySelector('#imgGallery');
     swapImage();
 }
