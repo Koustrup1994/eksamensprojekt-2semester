@@ -305,8 +305,16 @@ window.onload = function() {
 
 window.addEventListener("resize", function() {
   let tableData = document.querySelectorAll("td");
+  let width = window.innerWidth;
 
-  for (data of tableData) {
-    data.style.height = data.clientWidth/2 + "px";
+  if (width < 1000) {
+    for (data of tableData) {
+      data.style.height = data.clientWidth + "px";
+    }
+  }
+  else {
+    for (data of tableData) {
+      data.style.height = data.clientWidth/2 + "px";
+    }
   }
 });

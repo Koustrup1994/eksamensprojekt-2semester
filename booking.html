@@ -36,107 +36,126 @@
 
       </div>
       <div class="center">
+        <h1>Reservér værelse</h1>
+
+        <ul class="center-margin">
+          <li>1. Vælg dag(e)</li>
+          <li>2. Vælg værelse</li>
+          <li>3. Udfyld oplysninger</li>
+          <li>4. Tryk 'Book'</li>
+        </ul>
+
         <div class="booking-div">
+          <div class="content-outerbox">
+            <div class="calendar-div center-margin">
+              <h2 id="calendar-h2">Kalender</h2>
+              <table class="calendar center-margin">
+                <tr>
+                  <th>ma</th>
+                  <th>ti</th>
+                  <th>on</th>
+                  <th>to</th>
+                  <th>fr</th>
+                  <th>lø</th>
+                  <th>sø</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                </tr>
+              </table>
+            </div>
+          </div>
 
-          <table class="calendar center-margin tm-50">
-            <tr>
-              <th>ma</th>
-              <th>ti</th>
-              <th>on</th>
-              <th>to</th>
-              <th>fr</th>
-              <th>lø</th>
-              <th>sø</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-              <td>7</td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>9</td>
-              <td>10</td>
-              <td>11</td>
-              <td>12</td>
-              <td>13</td>
-              <td>14</td>
-            </tr>
-            <tr>
-              <td>15</td>
-              <td>16</td>
-              <td>17</td>
-              <td>18</td>
-              <td>19</td>
-              <td>20</td>
-              <td>21</td>
-            </tr>
-            <tr>
-              <td>22</td>
-              <td>23</td>
-              <td>24</td>
-              <td>25</td>
-              <td>26</td>
-              <td>27</td>
-              <td>28</td>
-            </tr>
-          </table>
 
 
-          <div class="center-margin tm-50">
-            <h2>Tilgængelige værelser</h2>
-            <div class="rooms-selection flex wrap justify-c tm-50 center-margin">
-              <div class="room">
-                <img class="room-img" src="assets/images/filsoe.jpg" alt="">
-                <p>Pris: xxx</p>
-                <p>Sengepladser: xxx</p>
-                <a href="#p-info"><button data-roomId="1" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
+          <div class="content-outerbox">
+            <div class="center-margin tm-50">
+              <h2>Tilgængelige værelser</h2>
+              <div class="rooms-selection flex wrap justify-c tm-50 center-margin">
+                <div class="room">
+                  <img class="room-img" src="assets/images/filsoe.jpg" alt="">
+                  <p>Pris: xxx</p>
+                  <p>Sengepladser: xxx</p>
+                  <a href="#p-info"><button data-roomId="1" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
 
-              </div>
-              <div class="room">
-                <img class="room-img" src="assets/images/filsoe.jpg" alt="">
-                <p>Pris: xxx</p>
-                <p>Sengepladser: xxx</p>
-                <a href="#p-info"><button data-roomId="2" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
-              </div>
-              <div class="room">
-                <img class="room-img" src="assets/images/filsoe.jpg" alt="">
-                <p>Pris: xxx</p>
-                <p>Sengepladser: xxx</p>
-                <a href="#p-info"><button data-roomId="3" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
-              </div>
-              <div class="room">
-                <img class="room-img" src="assets/images/filsoe.jpg" alt="">
-                <p>Pris: xxx</p>
-                <p>Sengepladser: xxx</p>
-                <a href="#p-info"><button data-roomId="4" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
-              </div>
-              <div class="room">
-                <img class="room-img" src="assets/images/filsoe.jpg" alt="">
-                <p>Pris: xxx</p>
-                <p>Sengepladser: xxx</p>
-                <a href="#p-info"><button data-roomId="5" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
+                </div>
+                <div class="room">
+                  <img class="room-img" src="assets/images/filsoe.jpg" alt="">
+                  <p>Pris: xxx</p>
+                  <p>Sengepladser: xxx</p>
+                  <a href="#p-info"><button data-roomId="2" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
+                </div>
+                <div class="room">
+                  <img class="room-img" src="assets/images/filsoe.jpg" alt="">
+                  <p>Pris: xxx</p>
+                  <p>Sengepladser: xxx</p>
+                  <a href="#p-info"><button data-roomId="3" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
+                </div>
+                <div class="room">
+                  <img class="room-img" src="assets/images/filsoe.jpg" alt="">
+                  <p>Pris: xxx</p>
+                  <p>Sengepladser: xxx</p>
+                  <a href="#p-info"><button data-roomId="4" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
+                </div>
+                <div class="room">
+                  <img class="room-img" src="assets/images/filsoe.jpg" alt="">
+                  <p>Pris: xxx</p>
+                  <p>Sengepladser: xxx</p>
+                  <a href="#p-info"><button data-roomId="5" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="center-margin tm-50" id="p-info">
-            <h2>Personlige informationer</h2>
-            <div class="booking-form tm-50 center-margin">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Dit fornavn...">
+          <div class="content-outerbox">
 
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Dit efternavn...">
+            <div class="center-margin tm-50" id="p-info">
+              <h2>Personlige informationer</h2>
+              <div class="booking-form tm-50 center-margin">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Dit fornavn...">
 
-              <label for="email">Email adresse</label>
-              <input type="text" id="email" name="email" placeholder="Din email adresse...">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Dit efternavn...">
 
-              <button class="book-btn" type="button" name="button" id="submitBtn" onclick="submitReservation()">Book</button>
+                <label for="email">Email adresse</label>
+                <input type="text" id="email" name="email" placeholder="Din email adresse...">
+
+                <button class="book-btn" type="button" name="button" id="submitBtn" onclick="submitReservation()">Book</button>
+              </div>
             </div>
           </div>
         </div>
