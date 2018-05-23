@@ -291,6 +291,7 @@ h3 {
 #imgGallery {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 
 .center-margin {
@@ -406,6 +407,7 @@ th {
 }
 
 tr {
+  cursor: pointer;
 }
 
 td {
