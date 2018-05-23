@@ -96,7 +96,6 @@ function daySelect(event) {
       if (!inMiddle(selectedDates, date)) {
         event.target.style.background = "";
         selectedDates.splice(selectedDates.indexOf(date), 1);
-        console.log(selectedDates);
       }
     }
   }
@@ -110,6 +109,8 @@ function daySelect(event) {
     });
     console.log(selectedDates);
   }
+
+  buildList();
 }
 
 //clears chosen dates. Used for cleaning after ended reservation
@@ -133,6 +134,7 @@ function submitReservation() {
 
   document.querySelector("#fname").value = "";
   document.querySelector("#lname").value = "";
+  document.querySelector("#email").value = "";
   selectedRoom = "";
   selectedDates = [];
   clearDates();
@@ -187,6 +189,96 @@ function isNeighbor(array, item) {
   return answer;
 }
 
+function getReservationsFromMonth(month, year) {
+  let reservations = getLocalReservations();
+
+  for (item of reservations) {
+
+  }
+}
+
+function getReservationsFromDates() {
+  let returnValue = [];
+  let reservations = getLocalReservations();
+
+  if (selectedDates.length == 0) {
+    returnValue = reservations;
+  }
+  else {
+    for (item of reservations) {
+      for (date of item.dates) {
+        for (var i = 0; i < selectedDates.length; i++) {
+          if (!returnValue.includes(item.roomId)) {
+            if (item.dates.includes(selectedDates[i])) {
+              returnValue.unshift(item.roomId)
+            }
+          }
+        }
+      }
+    }
+  }
+
+  return returnValue;
+}
+
+function getRoomsToShow(reservatedRooms) {
+  let nonBookedRooms = [];
+  let rooms = getLocalRooms();
+
+  for (room of rooms) {
+    if (!reservatedRooms.includes(room.roomId)) {
+      nonBookedRooms.unshift(room);
+    }
+  }
+
+  return nonBookedRooms;
+}
+
+function buildList() {
+  let reservatedRooms = getReservationsFromDates();
+  let roomsToShow = getRoomsToShow(reservatedRooms);
+
+  let roomsSelection = document.querySelector(".rooms-selection");
+  roomsSelection.innerHTML = "";
+
+  for (room of roomsToShow) {
+    let roomDiv = document.createElement("div");
+    roomDiv.classList.add("room");
+
+    let roomImg = document.createElement("img");
+    roomImg.classList.add("room-img")
+    roomImg.setAttribute("src", room.imageSrc);
+    roomImg.setAttribute("alt", room.desc);
+
+    roomDiv.appendChild(roomImg);
+
+    let priceP = document.createElement("p");
+    priceP.innerHTML = "Pris: " + room.price + " kr";
+
+    roomDiv.appendChild(priceP);
+
+    let beds = document.createElement("p");
+    beds.innerHTML = "Sengepladser: " + room.beds;
+
+    roomDiv.appendChild(beds);
+
+    let a = document.createElement("a");
+    a.setAttribute("href", "#p-info");
+
+    let btn = document.createElement("button");
+    btn.setAttribute("data-roomId", room.roomId);
+    btn.classList.add("book-btn");
+    btn.setAttribute("onclick", "pickRoom(event)");
+    btn.innerHTML = "Vælg";
+
+    a.appendChild(btn);
+
+    roomDiv.appendChild(a);
+
+    roomsSelection.appendChild(roomDiv);
+  }
+}
+
 var selectedDates = [];
 var days = [];
 var selectedRoom;
@@ -207,6 +299,8 @@ window.onload = function() {
     });
     day.selected = false;
   }
+
+  buildList();
 }
 
 window.addEventListener("resize", function() {
