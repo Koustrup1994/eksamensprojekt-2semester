@@ -268,12 +268,15 @@ h3 {
 .gallery-container {
   max-width: 1427px;
   max-height: 700px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: rgba(63,79,35,0.1);
   position: absolute;
   top: 180px;
   z-index: -1000;
+}
+
+#imgGallery {
+  width: 100%;
+  height: auto;
 }
 
 .center-margin {
