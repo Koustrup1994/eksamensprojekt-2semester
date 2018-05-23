@@ -282,15 +282,12 @@ h3 {
 .gallery-container {
   max-width: 1427px;
   max-height: 700px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: rgba(63,79,35,0.1);
   position: absolute;
   top: 180px;
   z-index: -1000;
-}
-
-#imgGallery {
-  width: 100%;
-  height: auto;
 }
 
 .center-margin {
@@ -332,28 +329,32 @@ p {
 }
 
 /*rooms*/
-.room-icons {
+
+.rooms-icons {
+  display: flex;
   justify-content: center;
 }
 
-.room-icons > figure > img {
+.rooms-icons > figure > img {
   margin: 50px 50px 10px 50px;
   height: 60px;
   width: 60px;
   opacity: 0.70;
 }
 
-.room-icons > figure > figcaption {
-  max-width: 130px;
-  margin: auto;
+.rooms-icons > figure > figcaption {
+  text-align: center;
 }
 
 .rooms {
+  display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
 .rooms-info {
+  display: flex;
   justify-content: center;
   margin-top: 60px;
 }
@@ -365,6 +366,7 @@ p {
 .room-box {
   background-color: white;
   margin: 0 10px 50px 10px;
+  text-align: center;
 }
 
 .room-box > p {
@@ -374,23 +376,20 @@ p {
 
 .room-box > img {
   display: block;
-  max-width: 92%;
+  width: 92%;
   margin: 15px auto 5px auto;
 }
 
-.center > a > .book-btn {
-  padding: 15px 30px;
-  margin: 0 20px 20px 20px;
+.room-box > button {
+  padding: 5px 10px;
   background-color: #658d3c;
-  color: #ffffff;
+  color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 25px;
+  font-size: 16px;
   transition-duration: 0.2s;
-  cursor: pointer;
 }
 
-.center > a > .book-btn:hover {
+.room-box > button:hover {
   box-shadow: 5px 5px 18px 0 rgba(101,141,60,0.6);
 }
 
@@ -448,6 +447,8 @@ tr:nth-child(odd) {
   max-width: 30%;
   min-width: 350px;
   border-radius: 5px;
+  border-style: solid;
+  border-color: white; 
 }
 
 .room-img {
@@ -562,10 +563,5 @@ label {
   }
   .calendar-div {
     width: 80%;
-  }
-
-  figure > img {
-    max-height: 30px;
-    max-width: 30px;
   }
 }
