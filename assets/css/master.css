@@ -44,6 +44,12 @@ li {
   font-size: 1.2em;
 }
 
+footer {
+  min-height: 200px;
+  background: #3f4f24;
+  color: white;
+}
+
 /** Flex **/
 
 .flex {
@@ -323,6 +329,11 @@ p {
 
 .b {
   font-weight: bold;
+}
+
+.address {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /* Buttons */
