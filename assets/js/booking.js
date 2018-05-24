@@ -301,7 +301,8 @@ function buildList() {
     //Cheat button as it is not use for anything other than as a call to action. All functionality is placed on the div
     let btn = document.createElement("div");
     btn.setAttribute("data-roomId", room.roomId);
-    btn.classList.add("book-btn");
+    btn.classList.add("select-btn");
+    btn.classList.add("center-margin");
     //btn.setAttribute("onclick", "pickRoom(event)");
     btn.innerHTML = "Vælg";
 

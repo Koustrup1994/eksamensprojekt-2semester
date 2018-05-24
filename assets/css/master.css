@@ -342,7 +342,7 @@ p {
   width: 192px;
 }
 
-a[class="book-btn"] {
+a[class="vbb-btn"] {
   text-decoration: none;
 }
 
@@ -352,7 +352,7 @@ a[class="book-btn"] {
 
 /* Buttons */
 
-.book-btn {
+.vbb-btn {
     padding: 10px 15px;
     background-color: #658d3c;
     color: white;
@@ -360,6 +360,17 @@ a[class="book-btn"] {
     font-size: 1.25em;
     transition-duration: 0.2s;
     border-radius: 4px;
+}
+
+.select-btn {
+    padding: 10px 15px;
+    background-color: #658d3c;
+    color: white;
+    border: none;
+    font-size: 1.25em;
+    transition-duration: 0.2s;
+    border-radius: 4px;
+    width: 100%;
 }
 
 /*rooms*/
