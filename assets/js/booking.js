@@ -299,7 +299,7 @@ function buildList() {
     roomDiv.appendChild(priceP);
 
     //Cheat button as it is not use for anything other than as a call to action. All functionality is placed on the div
-    let btn = document.createElement("button");
+    let btn = document.createElement("div");
     btn.setAttribute("data-roomId", room.roomId);
     btn.classList.add("book-btn");
     //btn.setAttribute("onclick", "pickRoom(event)");

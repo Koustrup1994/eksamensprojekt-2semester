@@ -342,6 +342,10 @@ p {
   width: 192px;
 }
 
+a[class="book-btn"] {
+  text-decoration: none;
+}
+
 .br {
   display: table;
 }
@@ -481,7 +485,7 @@ tr:nth-child(odd) {
   min-width: 350px;
   border-radius: 5px;
   border-style: solid;
-  border-width: 3px;
+  border-width: 5px;
   border-color: white;
 }
 
