@@ -257,6 +257,7 @@ h3 {
   padding: 25px;
   border-radius: 10px;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .content-box {
@@ -339,6 +340,10 @@ p {
 
 .img-64 {
   width: 192px;
+}
+
+.br {
+  display: table;
 }
 
 /* Buttons */

@@ -50,7 +50,7 @@
           <p>Vrøgum Bed & Breakfast tilbyder vores gæster et hyggeligt ophold nær ved vestkysten og smuk dansk natur.</p>
         </div>
         <div class="gallery-container center-margin">
-          <img class="center-margin" id="imgGallery" src="" alt="Galleri">
+          <img class="center-margin" id="imgGallery" src="assets/images/img1.jpg" alt="Galleri">
         </div>
 
       </div>
@@ -65,15 +65,16 @@
 
       </div>
       <div class="center">
-        <div class="flex row justify-c">
-          <img class="img-64" src="assets/images/vbb-color-w-text.svg" alt="">
+        <div itemscope itemtype="http://schema.org/LocalBusiness" class="flex row justify-c">
+          <img itemprop="image" class="img-64" src="assets/images/vbb-color-w-text.svg" alt=""/>
           <div class="address">
-            <ul>
-              <li>Vrøgum Bed & Breakfast</li>
-              <li>Fiilsøvej 30</li>
-              <li>6840 Oksbøl</li>
-              <li>Tlf: 00000000</li>
-            </ul>
+              <span itemprop="name">Vrøgum Bed & Breakfast</span>
+              <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">Fiilsøvej 30</span>
+                <span itemprop="postalCode">6840</span>
+                <span itemprop="addressLocality">Oksbøl</span>
+              </span>
+              Tlf: <span itemprop="telephone">00000000</span>
           </div>
         </div>
       </div>
@@ -81,7 +82,7 @@
 
       </div>
     </footer>
-    <script src="assets/js/script.js" charset="utf-8"></script>
-    <script src="assets/js/fp-script.js" charset="utf-8"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/fp-script.js"></script>
   </body>
 </html>
