@@ -407,7 +407,7 @@ a[class="vbb-btn"] {
 
 .room-box {
   background-color: white;
-  margin: 0 10px 50px 10px;
+  margin: 0 10px 40px 10px;
 }
 
 .room-box > p {
@@ -421,11 +421,11 @@ a[class="vbb-btn"] {
   margin: 15px auto 5px auto;
 }
 
-.center > a > .book-btn {
-  font-size: 2em;
+.center > div {
+  margin-bottom: 40px;
 }
 
-.book-btn:hover {
+.vbb-btn:hover {
   box-shadow: 5px 5px 18px 0 rgba(101,141,60,0.6);
 }
 
