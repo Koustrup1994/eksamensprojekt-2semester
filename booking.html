@@ -55,8 +55,8 @@
               <li>4. Tryk 'Book'</li>
             </ul>
             <p>
-              <a href="#calendar">
-                <button class="book-btn" type="button" name="button">Næste</button>
+              <a class="vbb-btn" href="#calendar">
+                Næste
               </a>
             </p>
           </div>
@@ -121,8 +121,8 @@
                 </tr>
               </table>
               <p>
-                <a href="#rooms">
-                  <button class="book-btn" type="button" name="button">Næste</button>
+                <a href="#rooms" class="vbb-btn">
+                  Næste
                 </a>
               </p>
             </div>
@@ -134,47 +134,18 @@
             <div class="center-margin tm-50">
               <h2>VÆLG MELLEM TILGÆNGELIGE VÆRELSER</h2>
               <div class="rooms-selection flex wrap justify-c tm-50 center-margin">
-                <div class="room">
-                  <img class="room-img" src="assets/images/filsoe.jpg" alt="">
-                  <p>Pris: xxx</p>
-                  <p>Sengepladser: xxx</p>
-                  <a href="#p-info"><button data-roomId="1" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
-                </div>
-                <div class="room">
-                  <img class="room-img" src="assets/images/filsoe.jpg" alt="">
-                  <p>Pris: xxx</p>
-                  <p>Sengepladser: xxx</p>
-                  <a href="#p-info"><button data-roomId="2" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
-                </div>
-                <div class="room">
-                  <img class="room-img" src="assets/images/filsoe.jpg" alt="">
-                  <p>Pris: xxx</p>
-                  <p>Sengepladser: xxx</p>
-                  <a href="#p-info"><button data-roomId="3" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
-                </div>
-                <div class="room">
-                  <img class="room-img" src="assets/images/filsoe.jpg" alt="">
-                  <p>Pris: xxx</p>
-                  <p>Sengepladser: xxx</p>
-                  <a href="#p-info"><button data-roomId="4" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
-                </div>
-                <div class="room">
-                  <img class="room-img" src="assets/images/filsoe.jpg" alt="">
-                  <p>Pris: xxx</p>
-                  <p>Sengepladser: xxx</p>
-                  <a href="#p-info"><button data-roomId="5" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
-                </div>
+
               </div>
               <p>
-                <a href="#info">
-                  <button class="book-btn" type="button" name="button">Næste</button>
+                <a href="#info" class="vbb-btn">
+                  Næste
                 </a>
               </p>
             </div>
           </div>
 
           <div class="content-outerbox" id="info">
-            <div class="center-margin tm-50" id="p-info">
+            <div class="center-margin" id="p-info">
               <h2>UDFYLD INFORMATIONER</h2>
               <div class="booking-form tm-50 center-margin">
                 <label for="fname">Fornavn</label>
@@ -186,8 +157,7 @@
                 <label for="email">Email adresse</label>
                 <input class="text" id="email" name="email" placeholder="Din email adresse...">
 
-                <a href="booking-complete.html">
-                  <button class="book-btn" type="button" name="button" id="submitBtn" onclick="submitReservation()">Book</button>
+                <a href="booking-complete.html" class="vbb-btn" id="submitBtn" onclick="submitReservation()">Book
                 </a>
               </div>
             </div>
@@ -204,15 +174,18 @@
 
       </div>
       <div class="center">
-        <div class="flex row justify-c">
-          <img class="img-64" src="assets/images/vbb-color-w-text.svg" alt="">
+        <div itemscope itemtype="http://schema.org/LocalBusiness" class="flex row justify-c">
+          <img itemprop="image" class="img-64" src="assets/images/vbb-color-w-text.svg" alt=""/>
           <div class="address">
-            <ul>
-              <li>Vrøgum Bed & Breakfast</li>
-              <li>Fiilsøvej 30</li>
-              <li>6840 Oksbøl</li>
-              <li>Tlf: 00000000</li>
-            </ul>
+              <span class="br" itemprop="name">Vrøgum Bed & Breakfast</span>
+              <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span class="br" itemprop="streetAddress">Fiilsøvej 30</span>
+                <span class="br">
+                  <span itemprop="postalCode">6840 </span>
+                  <span itemprop="addressLocality">Oksbøl</span>
+                </span>
+              </span>
+              <span class="br" itemprop="telephone">Tlf: 00000000</span>
           </div>
         </div>
       </div>
@@ -220,7 +193,7 @@
 
       </div>
     </footer>
-    <script src="assets/js/script.js" charset="utf-8"></script>
-    <script src="assets/js/booking.js" charset="utf-8"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/booking.js"></script>
   </body>
 </html>

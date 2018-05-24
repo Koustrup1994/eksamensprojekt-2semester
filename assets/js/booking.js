@@ -85,7 +85,8 @@ function makeReservation(roomId, dates, firstName, lastName, email) {
 function daySelect(event) {
   let date = event.target.textContent + "-05" + "-2018";
   //If day is green, try to remove selection
-  if (event.target.style.background === "green") {
+  console.log(event.target.style.background);
+  if (event.target.style.background === "rgb(101, 141, 60)") {
     //Go on if selectedDates contains chosen date
     if (selectedDates.includes(date)) {
       /*Checks if chosen date is first or last date in selectedDates.
@@ -103,13 +104,13 @@ function daySelect(event) {
   //If chosen date is neighbor to either the first or last date in selectedDates the chosen date can be added to the array. Important for securing that selectedDates does not contain any holes
   else if (isNeighbor(selectedDates, date)) {
     selectedRoom = [];
-    event.target.style.background = "green";
+    event.target.style.background = "rgb(101, 141, 60)";
     selectedDates.unshift(date);
     selectedDates.sort(function(a, b) {
       //Very incomplete... only checks on day. Not month nor year,
       return a.split("-")[0] - b.split("-")[0];
     });
-    console.log(selectedDates);
+    console.log(event.target.style.background);
   }
 
   buildList();
@@ -146,7 +147,7 @@ function pickRoomById(id) {
     selectedRoom.splice(selectedRoom.indexOf(String(string)), 1);
   }
   else {
-    box.style.borderColor = "#658d3c";
+    box.style.borderColor = "rgba(101, 141, 60, 1)";
     selectedRoom.unshift(string);
   }
 }
@@ -293,15 +294,16 @@ function buildList() {
     roomDiv.appendChild(beds);
 
     let priceP = document.createElement("p");
-    priceP.innerHTML = "Pris: " + room.price + " kr";
+    priceP.innerHTML = "Pris: " + room.price + ",- kr. pr. nat.";
     priceP.classList.add("b");
 
     roomDiv.appendChild(priceP);
 
     //Cheat button as it is not use for anything other than as a call to action. All functionality is placed on the div
-    let btn = document.createElement("button");
+    let btn = document.createElement("div");
     btn.setAttribute("data-roomId", room.roomId);
-    btn.classList.add("book-btn");
+    btn.classList.add("select-btn");
+    btn.classList.add("center-margin");
     //btn.setAttribute("onclick", "pickRoom(event)");
     btn.innerHTML = "Vælg";
 

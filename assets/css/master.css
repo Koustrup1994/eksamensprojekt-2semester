@@ -45,9 +45,9 @@ li {
 }
 
 footer {
-  min-height: 200px;
   background: #3f4f24;
   color: white;
+  padding: 20px 0;
 }
 
 /** Flex **/
@@ -249,9 +249,11 @@ h3 {
   background-color: rgba(63,79,35,0.1);
   width: 100%;
   box-sizing: border-box;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   padding: 25px;
   border-radius: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .content-box {
@@ -336,9 +338,17 @@ p {
   width: 192px;
 }
 
+a[class="vbb-btn"] {
+  text-decoration: none;
+}
+
+.br {
+  display: table;
+}
+
 /* Buttons */
 
-.book-btn {
+.vbb-btn {
     padding: 10px 15px;
     background-color: #658d3c;
     color: white;
@@ -351,6 +361,17 @@ p {
 
 #backto-fp {
   margin-top: 50px;
+}
+
+.select-btn {
+    padding: 10px 15px;
+    background-color: #658d3c;
+    color: white;
+    border: none;
+    font-size: 1.25em;
+    transition-duration: 0.2s;
+    border-radius: 4px;
+    width: 100%;
 }
 
 /*rooms*/
@@ -432,7 +453,7 @@ tr {
 
 td {
   width: 10%;
-  background: grey;
+  background: #808080;
   border-radius: 5px;
 }
 
@@ -468,8 +489,8 @@ tr:nth-child(odd) {
   min-width: 350px;
   border-radius: 5px;
   border-style: solid;
-  border-width: 3px;
-  border-color: white;
+  border-width: 5px;
+  border-color: rgba(101, 141, 60, 0);
 }
 
 .room-img {
