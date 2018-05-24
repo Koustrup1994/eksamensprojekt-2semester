@@ -38,17 +38,22 @@
       <div class="center"  id="top">
         <h1>Reservér værelse</h1>
 
-        <ul class="center-margin">
-          <li>1. Vælg dag(e)</li>
-          <li>2. Vælg værelse</li>
-          <li>3. Udfyld oplysninger</li>
-          <li>4. Tryk 'Book'</li>
-        </ul>
+
 
         <div class="booking-div">
           <div class="content-outerbox">
+            <h2>BOOK ONLINE HER</h2>
+            <ul class="center-margin">
+              <li>1. Vælg først ønskede dage</li>
+              <li>2. Vælg værelser</li>
+              <li>3. Udfyld oplysninger</li>
+              <li>4. Tryk 'Book'</li>
+            </ul>
+          </div>
+
+          <div class="content-outerbox">
             <div class="calendar-div center-margin">
-              <h2 id="calendar-h2">Kalender</h2>
+              <h2 id="calendar-h2">MAJ</h2>
               <table class="calendar center-margin">
                 <tr>
                   <th>ma</th>
@@ -96,21 +101,25 @@
                   <td>28</td>
                 </tr>
               </table>
+              <p>
+                <a href="#rooms">
+                  <button class="book-btn" type="button" name="button">Næste</button>
+                </a>
+              </p>
             </div>
           </div>
 
 
 
-          <div class="content-outerbox">
+          <div class="content-outerbox" id="rooms">
             <div class="center-margin tm-50">
-              <h2>Tilgængelige værelser</h2>
+              <h2>VÆLG MELLEM TILGÆNGELIGE VÆRELSER</h2>
               <div class="rooms-selection flex wrap justify-c tm-50 center-margin">
                 <div class="room">
                   <img class="room-img" src="assets/images/filsoe.jpg" alt="">
                   <p>Pris: xxx</p>
                   <p>Sengepladser: xxx</p>
                   <a href="#p-info"><button data-roomId="1" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
-
                 </div>
                 <div class="room">
                   <img class="room-img" src="assets/images/filsoe.jpg" alt="">
@@ -137,24 +146,28 @@
                   <a href="#p-info"><button data-roomId="5" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
                 </div>
               </div>
+              <p>
+                <a href="#info">
+                  <button class="book-btn" type="button" name="button">Næste</button>
+                </a>
+              </p>
             </div>
           </div>
 
-          <div class="content-outerbox">
-
+          <div class="content-outerbox" id="info">
             <div class="center-margin tm-50" id="p-info">
-              <h2>Personlige informationer</h2>
+              <h2>UDFYLD INFORMATIONER</h2>
               <div class="booking-form tm-50 center-margin">
-                <label for="fname">First Name</label>
+                <label for="fname">Fornavn</label>
                 <input type="text" id="fname" name="firstname" placeholder="Dit fornavn...">
 
-                <label for="lname">Last Name</label>
+                <label for="lname">Efternavn</label>
                 <input type="text" id="lname" name="lastname" placeholder="Dit efternavn...">
 
                 <label for="email">Email adresse</label>
                 <input type="text" id="email" name="email" placeholder="Din email adresse...">
 
-                <a href="#top">
+                <a href="booking-complete.html">
                   <button class="book-btn" type="button" name="button" id="submitBtn" onclick="submitReservation()">Book</button>
                 </a>
               </div>

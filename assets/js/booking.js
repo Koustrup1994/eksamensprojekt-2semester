@@ -136,6 +136,19 @@ function pickRoom(event) {
   }
 }
 
+function pickRoomById(id) {
+  let string = id.split("-")[1];
+  let box = document.querySelector("#"+id);
+  if (box.style.borderColor != "") {
+    box.style.borderColor = "";
+    selectedRoom.splice(selectedRoom.indexOf(String(string)), 1);
+  }
+  else {
+    box.style.borderColor = "#658d3c";
+    selectedRoom.unshift(string);
+  }
+}
+
 function submitReservation() {
   let firstName = document.querySelector("#fname").value;
   let lastName = document.querySelector("#lname").value;
@@ -148,6 +161,9 @@ function submitReservation() {
   document.querySelector("#email").value = "";
   selectedRoom = [];
   selectedDates = [];
+  for (variable of document.querySelectorAll(".room")) {
+    variable.style.borderColor = "";
+  }
   clearDates();
 }
 
@@ -260,7 +276,7 @@ function buildList() {
   for (room of roomsToShow) {
     let roomDiv = document.createElement("div");
     roomDiv.classList.add("room");
-    roomDiv.id = "r" + room.roomId;
+    roomDiv.id = "r-" + room.roomId;
 
     let roomImg = document.createElement("img");
     roomImg.classList.add("room-img")
@@ -269,15 +285,16 @@ function buildList() {
 
     roomDiv.appendChild(roomImg);
 
-    let priceP = document.createElement("p");
-    priceP.innerHTML = "Pris: " + room.price + " kr";
-
-    roomDiv.appendChild(priceP);
-
     let beds = document.createElement("p");
     beds.innerHTML = "Sengepladser: " + room.beds;
 
     roomDiv.appendChild(beds);
+
+    let priceP = document.createElement("p");
+    priceP.innerHTML = "Pris: " + room.price + " kr";
+    priceP.classList.add("b");
+
+    roomDiv.appendChild(priceP);
 
     let a = document.createElement("a");
     a.setAttribute("href", "#p-info");
@@ -288,11 +305,16 @@ function buildList() {
     btn.setAttribute("onclick", "pickRoom(event)");
     btn.innerHTML = "Vælg";
 
-    a.appendChild(btn);
+    /*a.appendChild(btn);
 
-    roomDiv.appendChild(btn);
+    roomDiv.appendChild(btn);*/
 
     roomsSelection.appendChild(roomDiv);
+
+    roomDiv.addEventListener('click', function() {
+      //console.log(roomDiv.id);
+      pickRoomById(roomDiv.id);
+    });
   }
 }
 
