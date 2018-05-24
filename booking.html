@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="da" dir="ltr">
   <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119813501-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-119813501-1');
+    </script>
     <meta charset="utf-8">
-    <title>Book a room</title>
-    <meta name="description" content=""/>
-    <meta name="viewport" content="width=device-width">
+    <title>Reservér værelse - Vrøgum Bed & Breakfast</title>
+    <meta name="description" content="Vrøgum Bed & Breakfast tilbyder vores gæster et hyggeligt ophold nær ved vestkysten og smuk dansk natur.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/master.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   </head>
@@ -35,20 +43,27 @@
       <div class="left sidebar">
 
       </div>
-      <div class="center"  id="top">
+      <div class="center" id="top">
         <h1>Reservér værelse</h1>
-
-        <ul class="center-margin">
-          <li>1. Vælg dag(e)</li>
-          <li>2. Vælg værelse</li>
-          <li>3. Udfyld oplysninger</li>
-          <li>4. Tryk 'Book'</li>
-        </ul>
-
         <div class="booking-div">
           <div class="content-outerbox">
+            <h2>BOOK ONLINE</h2>
+            <ul class="center-margin">
+              <li>1. Vælg først ønskede dage</li>
+              <li>2. Vælg værelser</li>
+              <li>3. Udfyld oplysninger</li>
+              <li>4. Tryk 'Book'</li>
+            </ul>
+            <p>
+              <a href="#calendar">
+                <button class="book-btn" type="button" name="button">Næste</button>
+              </a>
+            </p>
+          </div>
+
+          <div class="content-outerbox" id=calendar>
             <div class="calendar-div center-margin">
-              <h2 id="calendar-h2">Kalender</h2>
+              <h2 id="calendar-h2">MAJ</h2>
               <table class="calendar center-margin">
                 <tr>
                   <th>ma</th>
@@ -60,57 +75,70 @@
                   <th>sø</th>
                 </tr>
                 <tr>
+                  <td></td>
                   <td>1</td>
                   <td>2</td>
                   <td>3</td>
                   <td>4</td>
                   <td>5</td>
                   <td>6</td>
-                  <td>7</td>
                 </tr>
                 <tr>
+                  <td>7</td>
                   <td>8</td>
                   <td>9</td>
                   <td>10</td>
                   <td>11</td>
                   <td>12</td>
                   <td>13</td>
-                  <td>14</td>
                 </tr>
                 <tr>
+                  <td>14</td>
                   <td>15</td>
                   <td>16</td>
                   <td>17</td>
                   <td>18</td>
                   <td>19</td>
                   <td>20</td>
-                  <td>21</td>
                 </tr>
                 <tr>
+                  <td>21</td>
                   <td>22</td>
                   <td>23</td>
                   <td>24</td>
                   <td>25</td>
                   <td>26</td>
                   <td>27</td>
+                </tr>
+                <tr>
                   <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                 </tr>
               </table>
+              <p>
+                <a href="#rooms">
+                  <button class="book-btn" type="button" name="button">Næste</button>
+                </a>
+              </p>
             </div>
           </div>
 
 
 
-          <div class="content-outerbox">
+          <div class="content-outerbox" id="rooms">
             <div class="center-margin tm-50">
-              <h2>Tilgængelige værelser</h2>
+              <h2>VÆLG MELLEM TILGÆNGELIGE VÆRELSER</h2>
               <div class="rooms-selection flex wrap justify-c tm-50 center-margin">
                 <div class="room">
                   <img class="room-img" src="assets/images/filsoe.jpg" alt="">
                   <p>Pris: xxx</p>
                   <p>Sengepladser: xxx</p>
                   <a href="#p-info"><button data-roomId="1" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
-
                 </div>
                 <div class="room">
                   <img class="room-img" src="assets/images/filsoe.jpg" alt="">
@@ -137,24 +165,28 @@
                   <a href="#p-info"><button data-roomId="5" class="book-btn" type="button" onclick="pickRoom(event)">Vælg</button></a>
                 </div>
               </div>
+              <p>
+                <a href="#info">
+                  <button class="book-btn" type="button" name="button">Næste</button>
+                </a>
+              </p>
             </div>
           </div>
 
-          <div class="content-outerbox">
-
+          <div class="content-outerbox" id="info">
             <div class="center-margin tm-50" id="p-info">
-              <h2>Personlige informationer</h2>
+              <h2>UDFYLD INFORMATIONER</h2>
               <div class="booking-form tm-50 center-margin">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Dit fornavn...">
+                <label for="fname">Fornavn</label>
+                <input class="text" id="fname" name="firstname" placeholder="Dit fornavn...">
 
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Dit efternavn...">
+                <label for="lname">Efternavn</label>
+                <input class="text" id="lname" name="lastname" placeholder="Dit efternavn...">
 
                 <label for="email">Email adresse</label>
-                <input type="text" id="email" name="email" placeholder="Din email adresse...">
+                <input class="text" id="email" name="email" placeholder="Din email adresse...">
 
-                <a href="#top">
+                <a href="booking-complete.html">
                   <button class="book-btn" type="button" name="button" id="submitBtn" onclick="submitReservation()">Book</button>
                 </a>
               </div>
@@ -167,7 +199,27 @@
 
       </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="sidebar">
+
+      </div>
+      <div class="center">
+        <div class="flex row justify-c">
+          <img class="img-64" src="assets/images/vbb-color-w-text.svg" alt="">
+          <div class="address">
+            <ul>
+              <li>Vrøgum Bed & Breakfast</li>
+              <li>Fiilsøvej 30</li>
+              <li>6840 Oksbøl</li>
+              <li>Tlf: 00000000</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+
+      </div>
+    </footer>
     <script src="assets/js/script.js" charset="utf-8"></script>
     <script src="assets/js/booking.js" charset="utf-8"></script>
   </body>
