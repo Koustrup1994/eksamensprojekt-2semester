@@ -147,7 +147,7 @@ function pickRoomById(id) {
     selectedRoom.splice(selectedRoom.indexOf(String(string)), 1);
   }
   else {
-    box.style.borderColor = "#658d3c";
+    box.style.borderColor = "rgba(101, 141, 60, 1)";
     selectedRoom.unshift(string);
   }
 }

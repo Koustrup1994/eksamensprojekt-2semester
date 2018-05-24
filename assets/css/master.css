@@ -497,7 +497,7 @@ tr:nth-child(odd) {
   border-radius: 5px;
   border-style: solid;
   border-width: 5px;
-  border-color: white;
+  border-color: rgba(101, 141, 60, 0);
 }
 
 .room-img {
