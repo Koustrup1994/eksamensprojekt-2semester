@@ -293,7 +293,7 @@ function buildList() {
     roomDiv.appendChild(beds);
 
     let priceP = document.createElement("p");
-    priceP.innerHTML = "Pris: " + room.price + " kr";
+    priceP.innerHTML = "Pris: " + room.price + ",- kr. pr. nat.";
     priceP.classList.add("b");
 
     roomDiv.appendChild(priceP);
