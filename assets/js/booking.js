@@ -123,6 +123,7 @@ function clearDates() {
 }
 
 // Selects a room for reservation
+/*
 function pickRoom(event) {
   let string = "#r" + event.target.dataset.roomid;
   let box = document.querySelector(string);
@@ -134,8 +135,9 @@ function pickRoom(event) {
     box.style.borderColor = "#658d3c";
     selectedRoom.unshift(event.target.dataset.roomid);
   }
-}
+}*/
 
+// Selects a room for reservation by id
 function pickRoomById(id) {
   let string = id.split("-")[1];
   let box = document.querySelector("#"+id);
@@ -296,23 +298,18 @@ function buildList() {
 
     roomDiv.appendChild(priceP);
 
-    let a = document.createElement("a");
-    a.setAttribute("href", "#p-info");
-
+    //Cheat button as it is not use for anything other than as a call to action. All functionality is placed on the div
     let btn = document.createElement("button");
     btn.setAttribute("data-roomId", room.roomId);
     btn.classList.add("book-btn");
-    btn.setAttribute("onclick", "pickRoom(event)");
+    //btn.setAttribute("onclick", "pickRoom(event)");
     btn.innerHTML = "Vælg";
 
-    /*a.appendChild(btn);
-
-    roomDiv.appendChild(btn);*/
+    roomDiv.appendChild(btn);
 
     roomsSelection.appendChild(roomDiv);
 
     roomDiv.addEventListener('click', function() {
-      //console.log(roomDiv.id);
       pickRoomById(roomDiv.id);
     });
   }

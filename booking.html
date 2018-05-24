@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Book a room</title>
-    <meta name="description" content=""/>
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="assets/css/master.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -35,23 +35,28 @@
       <div class="left sidebar">
 
       </div>
-      <div class="center"  id="top">
+      <div class="center" id="top">
         <h1>Reservér værelse</h1>
 
 
 
         <div class="booking-div">
           <div class="content-outerbox">
-            <h2>BOOK ONLINE HER</h2>
+            <h2>BOOK ONLINE</h2>
             <ul class="center-margin">
               <li>1. Vælg først ønskede dage</li>
               <li>2. Vælg værelser</li>
               <li>3. Udfyld oplysninger</li>
               <li>4. Tryk 'Book'</li>
             </ul>
+            <p>
+              <a href="#calendar">
+                <button class="book-btn" type="button" name="button">Næste</button>
+              </a>
+            </p>
           </div>
 
-          <div class="content-outerbox">
+          <div class="content-outerbox" id=calendar>
             <div class="calendar-div center-margin">
               <h2 id="calendar-h2">MAJ</h2>
               <table class="calendar center-margin">
@@ -65,40 +70,49 @@
                   <th>sø</th>
                 </tr>
                 <tr>
+                  <td></td>
                   <td>1</td>
                   <td>2</td>
                   <td>3</td>
                   <td>4</td>
                   <td>5</td>
                   <td>6</td>
-                  <td>7</td>
                 </tr>
                 <tr>
+                  <td>7</td>
                   <td>8</td>
                   <td>9</td>
                   <td>10</td>
                   <td>11</td>
                   <td>12</td>
                   <td>13</td>
-                  <td>14</td>
                 </tr>
                 <tr>
+                  <td>14</td>
                   <td>15</td>
                   <td>16</td>
                   <td>17</td>
                   <td>18</td>
                   <td>19</td>
                   <td>20</td>
-                  <td>21</td>
                 </tr>
                 <tr>
+                  <td>21</td>
                   <td>22</td>
                   <td>23</td>
                   <td>24</td>
                   <td>25</td>
                   <td>26</td>
                   <td>27</td>
+                </tr>
+                <tr>
                   <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                 </tr>
               </table>
               <p>
@@ -159,13 +173,13 @@
               <h2>UDFYLD INFORMATIONER</h2>
               <div class="booking-form tm-50 center-margin">
                 <label for="fname">Fornavn</label>
-                <input type="text" id="fname" name="firstname" placeholder="Dit fornavn...">
+                <input class="text" id="fname" name="firstname" placeholder="Dit fornavn...">
 
                 <label for="lname">Efternavn</label>
-                <input type="text" id="lname" name="lastname" placeholder="Dit efternavn...">
+                <input class="text" id="lname" name="lastname" placeholder="Dit efternavn...">
 
                 <label for="email">Email adresse</label>
-                <input type="text" id="email" name="email" placeholder="Din email adresse...">
+                <input class="text" id="email" name="email" placeholder="Din email adresse...">
 
                 <a href="booking-complete.html">
                   <button class="book-btn" type="button" name="button" id="submitBtn" onclick="submitReservation()">Book</button>
