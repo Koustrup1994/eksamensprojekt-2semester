@@ -334,6 +334,11 @@ p {
 .address {
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-left: 20px;
+}
+
+.img-64 {
+  width: 192px;
 }
 
 /* Buttons */
