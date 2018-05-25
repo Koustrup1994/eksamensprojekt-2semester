@@ -610,3 +610,8 @@ label {
     max-width: 30px;
   }
 }
+
+.border {
+  border-style: solid;
+  border-color: magenta;
+}
