@@ -289,6 +289,12 @@ h3 {
   line-height: 1.6em;
 }
 
+.info {
+  height: 40px;
+  width: 100px;
+  background-color: lightblue;
+}
+
 .logo-large {
   height: 400px;
   width: 400px;
