@@ -85,7 +85,6 @@ function makeReservation(roomId, dates, firstName, lastName, email) {
 function daySelect(event) {
   let date = event.target.textContent + "-05" + "-2018";
   //If day is green, try to remove selection
-  console.log(event.target.style.background);
   if (event.target.style.background === "rgb(101, 141, 60)") {
     //Go on if selectedDates contains chosen date
     if (selectedDates.includes(date)) {
@@ -110,7 +109,6 @@ function daySelect(event) {
       //Very incomplete... only checks on day. Not month nor year,
       return a.split("-")[0] - b.split("-")[0];
     });
-    console.log(event.target.style.background);
   }
 
   buildList();
@@ -122,21 +120,6 @@ function clearDates() {
     td.style.background = "";
   }
 }
-
-// Selects a room for reservation
-/*
-function pickRoom(event) {
-  let string = "#r" + event.target.dataset.roomid;
-  let box = document.querySelector(string);
-  if (box.style.borderColor != "") {
-    box.style.borderColor = "";
-    selectedRoom.splice(selectedRoom.indexOf(String(event.target.dataset.roomid)), 1);
-  }
-  else {
-    box.style.borderColor = "#658d3c";
-    selectedRoom.unshift(event.target.dataset.roomid);
-  }
-}*/
 
 // Selects a room for reservation by id
 function pickRoomById(id) {
@@ -219,13 +202,14 @@ function isNeighbor(array, item) {
   return answer;
 }
 
+/*NOT IN USE AT THE MOMENT
 function getReservationsFromMonth(month, year) {
   let reservations = getLocalReservations();
 
   for (item of reservations) {
 
   }
-}
+}*/
 
 function getReservationsFromDates() {
   let returnValue = [];
@@ -259,13 +243,10 @@ function getRoomsToShow(reservatedRooms) {
   let rooms = getLocalRooms();
 
   for (room of rooms) {
-
       if (!reservatedRooms.includes(room.roomId)) {
         nonBookedRooms.unshift(room);
       }
-
   }
-
   return nonBookedRooms;
 }
 
