@@ -286,7 +286,6 @@ h3 {
 .gallery-container {
   max-width: 1427px;
   max-height: 700px;
-  background-color: rgba(63,79,35,0.1);
   position: absolute;
   top: 180px;
   z-index: -1000;
@@ -492,6 +491,7 @@ tr:nth-child(odd) {
   border-style: solid;
   border-width: 5px;
   border-color: rgba(101, 141, 60, 0);
+  cursor: pointer;
 }
 
 .room-img {
