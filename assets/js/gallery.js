@@ -27,3 +27,66 @@ img.onclick = function(){
     modalImg.src = this.src;
     captionText.innerHTML = this.alt;
 }
+
+var img = document.querySelector('#myImg-2');
+var modalImg = document.querySelector('#img01');
+var captionText = document.querySelector('#caption');
+img.onclick = function(){
+    modal.style.display = 'block';
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.querySelector('#myImg-3');
+var modalImg = document.querySelector('#img01');
+var captionText = document.querySelector('#caption');
+img.onclick = function(){
+    modal.style.display = 'block';
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.querySelector('#myImg-4');
+var modalImg = document.querySelector('#img01');
+var captionText = document.querySelector('#caption');
+img.onclick = function(){
+    modal.style.display = 'block';
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.querySelector('#myImg-5');
+var modalImg = document.querySelector('#img01');
+var captionText = document.querySelector('#caption');
+img.onclick = function(){
+    modal.style.display = 'block';
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.querySelector('#myImg-6');
+var modalImg = document.querySelector('#img01');
+var captionText = document.querySelector('#caption');
+img.onclick = function(){
+    modal.style.display = 'block';
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.querySelector('#myImg-7');
+var modalImg = document.querySelector('#img01');
+var captionText = document.querySelector('#caption');
+img.onclick = function(){
+    modal.style.display = 'block';
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var img = document.querySelector('#myImg-8');
+var modalImg = document.querySelector('#img01');
+var captionText = document.querySelector('#caption');
+img.onclick = function(){
+    modal.style.display = 'block';
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
