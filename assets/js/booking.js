@@ -141,7 +141,7 @@ function submitReservation() {
   let email = document.querySelector("#email").value;
 
   makeReservation(selectedRoom, selectedDates, firstName, lastName, email);
-
+/*
   document.querySelector("#fname").value = "";
   document.querySelector("#lname").value = "";
   document.querySelector("#email").value = "";
@@ -150,7 +150,7 @@ function submitReservation() {
   for (variable of document.querySelectorAll(".room")) {
     variable.style.borderColor = "";
   }
-  clearDates();
+  clearDates();*/
 }
 
 //Checks if item is equal to the first or the last item in the array. If not it is assumed that the item is somewhere in the middle of the array. Because of that it is needed to check that the array contains the item, if that information is needed.
@@ -263,7 +263,7 @@ function buildList() {
     roomDiv.id = "r-" + room.roomId;
 
     let roomImg = document.createElement("img");
-    roomImg.classList.add("room-img")
+    roomImg.classList.add("room-img");
     roomImg.setAttribute("src", room.imageSrc);
     roomImg.setAttribute("alt", room.desc);
 

@@ -229,14 +229,15 @@ h3 {
 }
 
 .fp-info {
-  padding-top: 30px;
-  color: #EEE;
+  margin-top: 30px;
   font-style: italic;
   text-align: center;
   font-size: 1.2em;
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
+  text-shadow: 0px 0px 2px white;
 }
 
 .content-container {
@@ -306,8 +307,9 @@ h3 {
   max-width: 1427px;
   max-height: 700px;
   position: absolute;
-  top: 180px;
+  top: 120px;
   z-index: -1000;
+  opacity: 0.4;
 }
 
 #imgGallery {

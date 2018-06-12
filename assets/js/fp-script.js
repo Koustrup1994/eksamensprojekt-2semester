@@ -14,7 +14,7 @@ function swapImage() {
       curImg = 0;
     }
     else {
-      curImg = curImg
+      curImg = curImg;
     }
     imgCont.src = imgO[curImg].src;
     setTimeout(swapImage,5000);
